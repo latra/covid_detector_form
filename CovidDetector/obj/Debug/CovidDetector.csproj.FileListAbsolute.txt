@@ -2,8 +2,8 @@ C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\bin\Debug\CovidDetector.
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\bin\Debug\CovidDetector.exe
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\bin\Debug\CovidDetector.pdb
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.csprojAssemblyReference.cache
-C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.Form1.resources
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.Properties.Resources.resources
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.csproj.GenerateResource.cache
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.exe
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.pdb
+C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.loginForm.resources
