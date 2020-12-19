@@ -19,5 +19,9 @@ namespace CovidDetector.Modules
         {
             return this.user == "medic1" && this.password == "12345";
         }
+        public string getName()
+        {
+            return "Gregory House";
+        }
     }
 }

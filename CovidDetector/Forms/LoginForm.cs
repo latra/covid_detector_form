@@ -37,7 +37,8 @@ namespace CovidDetector
             LoginModule login = new LoginModule(this.userInput.Text, this.PasswordInput.Text);
             if (login.validate())
             {
-                var medicPanelForm = new MedicUXForm();
+
+                var medicPanelForm = new MedicUXForm(login.getName());
                 this.Hide();
                 medicPanelForm.ShowDialog();
                 this.Close();
