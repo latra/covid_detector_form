@@ -7,3 +7,4 @@ C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.exe
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.pdb
 C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.loginForm.resources
+C:\Users\Jofre\source\repos\CovidDetector\CovidDetector\obj\Debug\CovidDetector.Forms.MedicUXForm.resources

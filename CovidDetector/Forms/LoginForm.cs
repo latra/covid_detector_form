@@ -38,7 +38,8 @@ namespace CovidDetector
             if (login.validate())
             {
                 var medicPanelForm = new MedicUXForm();
-                medicPanelForm.Show();
+                this.Hide();
+                medicPanelForm.ShowDialog();
                 this.Close();
             }
             else
