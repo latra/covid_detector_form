@@ -52,7 +52,7 @@
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(228, 681);
+            this.menuPanel.Size = new System.Drawing.Size(228, 771);
             this.menuPanel.TabIndex = 0;
             // 
             // usernameLabel
@@ -71,7 +71,7 @@
             this.helpButton.FlatAppearance.BorderSize = 0;
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(3, 632);
+            this.helpButton.Location = new System.Drawing.Point(3, 722);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(222, 41);
             this.helpButton.TabIndex = 3;
@@ -80,11 +80,11 @@
             // 
             // logoutButton
             // 
-            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.logoutButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.logoutButton.FlatAppearance.BorderSize = 0;
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(3, 585);
+            this.logoutButton.Location = new System.Drawing.Point(3, 675);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(222, 41);
             this.logoutButton.TabIndex = 2;
@@ -124,7 +124,7 @@
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(228, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(994, 118);
+            this.headerPanel.Size = new System.Drawing.Size(1100, 118);
             this.headerPanel.TabIndex = 1;
             // 
             // titleLabel
@@ -142,14 +142,15 @@
             this.activePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.activePanel.Location = new System.Drawing.Point(228, 118);
             this.activePanel.Name = "activePanel";
-            this.activePanel.Size = new System.Drawing.Size(994, 563);
+            this.activePanel.Size = new System.Drawing.Size(1100, 653);
             this.activePanel.TabIndex = 2;
             // 
             // MedicUXForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 681);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1328, 771);
             this.Controls.Add(this.activePanel);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.menuPanel);

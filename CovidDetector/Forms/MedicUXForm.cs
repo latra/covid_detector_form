@@ -25,8 +25,8 @@ namespace CovidDetector.Forms
         public void setColors()
         {
             Color menuColor = ColorTranslator.FromHtml("#9ADFFB");
-            Color buttonColor = ColorTranslator.FromHtml("#12ADD7");
-            Color buttonOverColor = ColorTranslator.FromHtml("#349CC5");
+            Color buttonOverColor= ColorTranslator.FromHtml("#12ADD7");
+            Color buttonColor = ColorTranslator.FromHtml("#349CC5");
             Color titleColor = Color.FromArgb(100, ColorTranslator.FromHtml("#000000"));
             this.titleLabel.Font = new Font("Roboto", 46F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = Color.FromArgb(100, buttonColor);

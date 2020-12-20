@@ -1,0 +1,10 @@
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\Tests.exe.config
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\Tests.exe
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\Tests.pdb
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\CovidDetector.exe
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\CovidDetector.pdb
+C:\Users\Jofre\source\repos\CovidDetector\Tests\bin\Debug\CovidDetector.exe.config
+C:\Users\Jofre\source\repos\CovidDetector\Tests\obj\Debug\Tests.csprojAssemblyReference.cache
+C:\Users\Jofre\source\repos\CovidDetector\Tests\obj\Debug\Tests.csproj.CopyComplete
+C:\Users\Jofre\source\repos\CovidDetector\Tests\obj\Debug\Tests.exe
+C:\Users\Jofre\source\repos\CovidDetector\Tests\obj\Debug\Tests.pdb
