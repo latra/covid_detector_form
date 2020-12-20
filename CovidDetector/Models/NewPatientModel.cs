@@ -7,108 +7,209 @@ using System.Threading.Tasks;
 namespace CovidDetector.Models { 
      public class NewPatientModel
     {
+        public NewPatientModel()
+        {
+            this.symptoms_binary = "0";
+            this.fever = "2";
+            this.tos = "2";
+            this.cough_first = "2";
+            this.crup = "2";
+            this.crup_first = "0";
+            this.dysphonia = "2";
+            this.disfonia_first = "0";
+            this.resp = "2";
+            this.dyspnea_first = "0";
+            this.tachypnea = "2";
+            this.tachypnea_first = "0";
+            this.ausc_resp = "2";
+            this.auscult_first = "0";
+            this.wheezing = "2";
+            this.crackles = "2";
+            this.odynophagia = "2";
+            this.odynophagia_first = "0";
+            this.nasal_congestion = "2";
+            this.nasal_first = "0";
+            this.fatiga = fatiga;
+            this.fatigue_first = "0";
+            this.headache = "2";
+            this.headache_first = "0";
+            this.conjuntivitis = "2";
+            this.conj_first = "0";
+            this.ocular_pain = "2";
+            this.ocular_first = "0";
+            this.gi_symptoms = "2";
+            this.gi_first = "0";
+            this.abdominal_pain = "2";
+            this.vomiting = "2";
+            this.dyarrea = "2";
+            this.dermatologic = "2";
+            this.skin_first = "0";
+            this.rash = "2";
+            this.inflam_periferic = "2";
+            this.inflam_oral = "2";
+            this.adenopathies = "2";
+            this.lymph_first = "0";
+            this.hepato = hepato;
+            this.hepato_first = "0";
+            this.splenomegaly = "2";
+            this.fatiga = "2";
+            this.fatigue_first = "0";
+            this.spleno_first = "0";
+            this.hemorrhagies = "2";
+            this.hemorr_first = "0";
+            this.irritability = "2";
+            this.irritability_first = "0";
+            this.neuro = "2";
+            this.neuro_first = "0";
+            this.confusion = "2";
+            this.seizures = "2";
+            this.nuchal_stiffness = "2";
+            this.hypotonia = "2";
+            this.peripheral_paralysis = "2";
+            this.shock = "3";
+            this.shock_first = "0";
+            this.hepato = "3";
+            this.hepato_first = "0";
+            this.bacterial_infection = "3";
+            this.taste_smell = "2";
+            this.taste_first = "0";
+            this.smell = smell;
+            this.smell_first = "0";
+            this.other_symptomatology_mialgies = false;
+            this.other_symptomatology_artritis = false;
+            this.other_symptomatology_artralgies = false;
+            this.other_symptomatology_dolor_toracic = false;
+            this.cxr2 = "2";
+            this.coviral_binary = "0";
+            this.comorbi_binary = "0";
+            this.cardiopathy = "2";
+            this.hypertension = "2";
+            this.pulmonar_disease = "2";
+            this.asma = "2";
+            this.nephrology = "2";
+            this.hepatic = "2";
+            this.neurologic = "2";
+            this.diabetes = "2";
+            this.tuberculosi = "2";
+            this.idp = "2";
+            this.neoplasia = "2";
+            this.kawasaki = "2";
+            this.inflammation = "2";
+            this.vih_others = "2";
+            this.obesity = "2";
+            this.flu_binary = "2";
+            this.vaccines_binary = "2";
+            this.flu_a_result = "2";
+            this.flu_b_result = "2";
+            this.vrs_result = "3";
+            this.adeno_result = "3";
+    }
+        public string vrs_result { get; set;  }
+        public string adeno_result { get; set; }
         public int? final_diagnosis_code { get; set; }
 
-        public bool sex { get; set; } // male -> true, woman -> false
-        public bool symptoms_binary { get; set; } // has symptoms?
-        public bool? fever { get; set; }
-        public int? highest_fever { get; set; }
+        public string sex { get; set; } // male -> true, woman -> false
+        public string symptoms_binary { get; set; } // has symptoms?
+        public string fever { get; set; }
+        public string highest_fever { get; set; }
         public int? total_days_fever { get; set; }
-        public bool tos { get; set; }
-        public bool? cough_first { get; set; }
-        public bool crup { get; set; }
-        public bool? crup_first { get; set; }
-        public bool dysphonia { get; set; }
-        public bool? disfonia_first { get; set; }
-        public bool resp { get; set; }
-        public bool? dyspnea_first { get; set; }
-        public bool tachypnea { get; set; }
-        public bool? tachypnea_first { get; set; }
-        public bool? ausc_resp { get; set; }
-        public bool? auscult_first { get; set; }
-        public bool? wheezing { get; set; }
-        public bool? crackles { get; set; }
-        public bool odynophagia { get; set; }
-        public bool? odynophagia_first { get; set; }
-        public bool nasal_congestion { get; set; }
-        public bool? nasal_first { get; set; }
-        public bool fatiga { get; set; }
-        public bool? fatigue_first { get; set; }
-        public bool headache { get; set; }
-        public bool? headache_first { get; set; }
-        public bool conjuntivitis { get; set; }
-        public bool? conj_first { get; set; }
-        public bool ocular_pain { get; set; }
-        public bool? ocular_first { get; set; }
-        public bool? gi_symptoms { get; set; }
-        public bool? gi_first { get; set; }
-        public bool abdominal_pain { get; set; }
-        public bool? vomiting { get; set; }
-        public bool dyarrea { get; set; }
-        public bool? dermatologic { get; set; }
-        public bool? skin_first { get; set; }
-        public bool rash { get; set; }
-        public bool? inflam_periferic { get; set; }
-        public bool? inflam_oral { get; set; }
-        public bool adenopathies { get; set; }
-        public bool? lymph_first { get; set; }
-        public bool hepato { get; set; }
-        public bool? hepato_first { get; set; }
-        public bool splenomegaly { get; set; }
-        public bool? spleno_first { get; set; }
-        public bool hemorrhagies { get; set; }
-        public bool? hemorr_first { get; set; }
-        public bool irritability { get; set; }
-        public bool? irritability_first { get; set; }
-        public bool? neuro { get; set; }
-        public bool? neuro_first { get; set; }
-        public bool? confusion { get; set; }
-        public bool? seizures { get; set; }
-        public bool? nuchal_stiffness { get; set; }
-        public bool? hypotonia { get; set; }
-        public bool? peripheral_paralysis { get; set; }
-        public bool? shock { get; set; }
-        public bool? shock_first { get; set; }
-        public bool? taste_smell { get; set; }
-        public bool? taste_first { get; set; }
-        public bool? smell { get; set; }
-        public bool? smell_first { get; set; }
+        public string tos { get; set; }
+        public string cough_first { get; set; }
+        public string crup { get; set; }
+        public string crup_first { get; set; }
+        public string dysphonia { get; set; }
+        public string disfonia_first { get; set; }
+        public string resp { get; set; }
+        public string dyspnea_first { get; set; }
+        public string tachypnea { get; set; }
+        public string tachypnea_first { get; set; }
+        public string ausc_resp { get; set; }
+        public string auscult_first { get; set; }
+        public string wheezing { get; set; }
+        public string crackles { get; set; }
+        public string odynophagia { get; set; }
+        public string odynophagia_first { get; set; }
+        public string nasal_congestion { get; set; }
+        public string nasal_first { get; set; }
+        public string fatiga { get; set; }
+        public string fatigue_first { get; set; }
+        public string headache { get; set; }
+        public string headache_first { get; set; }
+        public string conjuntivitis { get; set; }
+        public string conj_first { get; set; }
+        public string ocular_pain { get; set; }
+        public string ocular_first { get; set; }
+        public string gi_symptoms { get; set; }
+        public string gi_first { get; set; }
+        public string abdominal_pain { get; set; }
+        public string vomiting { get; set; }
+        public string dyarrea { get; set; }
+        public string dermatologic { get; set; }
+        public string skin_first { get; set; }
+        public string rash { get; set; }
+        public string inflam_periferic { get; set; }
+        public string inflam_oral { get; set; }
+        public string adenopathies { get; set; }
+        public string lymph_first { get; set; }
+        public string hepato { get; set; }
+        public string hepato_first { get; set; }
+        public string splenomegaly { get; set; }
+        public string spleno_first { get; set; }
+        public string hemorrhagies { get; set; }
+        public string hemorr_first { get; set; }
+        public string irritability { get; set; }
+        public string irritability_first { get; set; }
+        public string neuro { get; set; }
+        public string neuro_first { get; set; }
+        public string confusion { get; set; }
+        public string seizures { get; set; }
+        public string nuchal_stiffness { get; set; }
+        public string hypotonia { get; set; }
+        public string peripheral_paralysis { get; set; }
+        public string shock { get; set; }
+        public string shock_first { get; set; }
+        public string taste_smell { get; set; }
+        public string taste_first { get; set; }
+        public string smell { get; set; }
+        public string smell_first { get; set; }
         public bool other_symptomatology_mialgies { get; set; }
         public bool other_symptomatology_artritis { get; set; }
         public bool other_symptomatology_artralgies { get; set; }
         public bool other_symptomatology_dolor_toracic { get; set; }
-        public bool sero_type_response { get; set; }
-        public bool sero_method { get; set; }
-        public bool sero_response { get; set; }
-        public bool sero_type_response_2 { get; set; }
-        public bool? cxr2 { get; set; }
-        public bool? sat_hb_o2_value { get; set; }
-        public bool? adm_hospital { get; set; }
-        public bool? picu_adm { get; set; }
-        public bool? days_in_hospital { get; set; }
-        public bool final_outcome { get; set; }
-        public bool coviral_binary { get; set; }
-        public bool? coviral_type { get; set; }
-        public bool bacterial_infection { get; set; }
-        public bool comorbi_binary { get; set; }
-        public bool cardiopathy { get; set; }
-        public bool hypertension { get; set; }
-        public bool pulmonar_disease { get; set; }
-        public bool asma { get; set; }
-        public bool nephrology { get; set; }
-        public bool hepatic { get; set; }
-        public bool neurologic { get; set; }
-        public bool diabetes { get; set; }
-        public bool? tuberculosi { get; set; }
-        public bool idp { get; set; }
-        public bool neoplasia { get; set; }
-        public bool kawasaki { get; set; }
-        public bool inflammation { get; set; }
-        public bool? vih_others { get; set; }
-        public bool obesity { get; set; }
-        public bool flu_binary { get; set; }
-        public bool? vaccines_binary { get; set; }
-        public bool? final_classification_of_th { get; set; }
+        public string sero_type_response { get; set; }
+        public string sero_method { get; set; }
+        public string sero_response { get; set; }
+        public string sero_type_response_2 { get; set; }
+        public string cxr2 { get; set; }
+        public float sat_hb_o2_value { get; set; }
+        public string adm_hospital { get; set; }
+        public string picu_adm { get; set; }
+        public int? days_in_hospital { get; set; }
+        public string final_outcome { get; set; }
+        public string coviral_binary { get; set; }
+        public string coviral_type { get; set; }
+        public string bacterial_infection { get; set; }
+        public string comorbi_binary { get; set; }
+        public string cardiopathy { get; set; }
+        public string hypertension { get; set; }
+        public string pulmonar_disease { get; set; }
+        public string asma { get; set; }
+        public string nephrology { get; set; }
+        public string hepatic { get; set; }
+        public string neurologic { get; set; }
+        public string diabetes { get; set; }
+        public string tuberculosi { get; set; }
+        public string idp { get; set; }
+        public string neoplasia { get; set; }
+        public string kawasaki { get; set; }
+        public string inflammation { get; set; }
+        public string vih_others { get; set; }
+        public string obesity { get; set; }
+        public string flu_binary { get; set; }
+        public string flu_a_result { get; set; }
+        public string flu_b_result { get; set; }
+        public string vaccines_binary { get; set; }
+        public string final_classification_of_th { get; set; }
 
                                     
     }

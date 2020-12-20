@@ -67,7 +67,7 @@
             this.userInput.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userInput.Location = new System.Drawing.Point(342, 297);
             this.userInput.Name = "userInput";
-            this.userInput.Size = new System.Drawing.Size(275, 36);
+            this.userInput.Size = new System.Drawing.Size(275, 65);
             this.userInput.TabIndex = 2;
             // 
             // PasswordInput
@@ -77,7 +77,7 @@
             this.PasswordInput.Location = new System.Drawing.Point(342, 375);
             this.PasswordInput.Name = "PasswordInput";
             this.PasswordInput.PasswordChar = '*';
-            this.PasswordInput.Size = new System.Drawing.Size(275, 36);
+            this.PasswordInput.Size = new System.Drawing.Size(275, 65);
             this.PasswordInput.TabIndex = 3;
             // 
             // userLabel
@@ -87,7 +87,7 @@
             this.userLabel.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userLabel.Location = new System.Drawing.Point(338, 271);
             this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(48, 23);
+            this.userLabel.Size = new System.Drawing.Size(98, 46);
             this.userLabel.TabIndex = 4;
             this.userLabel.Text = "User";
             // 
@@ -98,7 +98,7 @@
             this.passwordLabel.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.Location = new System.Drawing.Point(338, 349);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(94, 23);
+            this.passwordLabel.Size = new System.Drawing.Size(190, 46);
             this.passwordLabel.TabIndex = 5;
             this.passwordLabel.Text = "Password";
             // 

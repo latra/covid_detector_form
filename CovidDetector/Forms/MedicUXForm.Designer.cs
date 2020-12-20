@@ -51,17 +51,19 @@
             this.menuPanel.Controls.Add(this.patientListButton);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(228, 771);
+            this.menuPanel.Size = new System.Drawing.Size(456, 1483);
             this.menuPanel.TabIndex = 0;
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(12, 9);
+            this.usernameLabel.Location = new System.Drawing.Point(24, 17);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(120, 19);
+            this.usernameLabel.Size = new System.Drawing.Size(244, 38);
             this.usernameLabel.TabIndex = 4;
             this.usernameLabel.Text = "Welcome Dr. {0}";
             // 
@@ -71,9 +73,10 @@
             this.helpButton.FlatAppearance.BorderSize = 0;
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(3, 722);
+            this.helpButton.Location = new System.Drawing.Point(6, 1422);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(222, 41);
+            this.helpButton.Size = new System.Drawing.Size(444, 79);
             this.helpButton.TabIndex = 3;
             this.helpButton.Text = "Help";
             this.helpButton.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@
             this.logoutButton.FlatAppearance.BorderSize = 0;
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(3, 675);
+            this.logoutButton.Location = new System.Drawing.Point(6, 1315);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(222, 41);
+            this.logoutButton.Size = new System.Drawing.Size(444, 79);
             this.logoutButton.TabIndex = 2;
             this.logoutButton.Text = "Log out";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -97,9 +101,10 @@
             this.newPatientButton.FlatAppearance.BorderSize = 0;
             this.newPatientButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newPatientButton.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPatientButton.Location = new System.Drawing.Point(3, 208);
+            this.newPatientButton.Location = new System.Drawing.Point(6, 400);
+            this.newPatientButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.newPatientButton.Name = "newPatientButton";
-            this.newPatientButton.Size = new System.Drawing.Size(222, 84);
+            this.newPatientButton.Size = new System.Drawing.Size(444, 162);
             this.newPatientButton.TabIndex = 1;
             this.newPatientButton.Text = "New Patient";
             this.newPatientButton.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@
             this.patientListButton.FlatAppearance.BorderSize = 0;
             this.patientListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.patientListButton.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientListButton.Location = new System.Drawing.Point(3, 118);
+            this.patientListButton.Location = new System.Drawing.Point(6, 227);
+            this.patientListButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.patientListButton.Name = "patientListButton";
-            this.patientListButton.Size = new System.Drawing.Size(222, 84);
+            this.patientListButton.Size = new System.Drawing.Size(444, 162);
             this.patientListButton.TabIndex = 0;
             this.patientListButton.Text = "Patient List";
             this.patientListButton.UseVisualStyleBackColor = true;
@@ -122,9 +128,10 @@
             // 
             this.headerPanel.Controls.Add(this.titleLabel);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.Location = new System.Drawing.Point(228, 0);
+            this.headerPanel.Location = new System.Drawing.Point(456, 0);
+            this.headerPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1100, 118);
+            this.headerPanel.Size = new System.Drawing.Size(2200, 227);
             this.headerPanel.TabIndex = 1;
             // 
             // titleLabel
@@ -132,28 +139,31 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.Dock = System.Windows.Forms.DockStyle.Left;
             this.titleLabel.Location = new System.Drawing.Point(0, 0);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(0, 13);
+            this.titleLabel.Size = new System.Drawing.Size(0, 25);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // activePanel
             // 
             this.activePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.activePanel.Location = new System.Drawing.Point(228, 118);
+            this.activePanel.Location = new System.Drawing.Point(456, 227);
+            this.activePanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.activePanel.Name = "activePanel";
-            this.activePanel.Size = new System.Drawing.Size(1100, 653);
+            this.activePanel.Size = new System.Drawing.Size(2200, 1256);
             this.activePanel.TabIndex = 2;
             // 
             // MedicUXForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1328, 771);
+            this.ClientSize = new System.Drawing.Size(2656, 1483);
             this.Controls.Add(this.activePanel);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.menuPanel);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MedicUXForm";
             this.Text = "Medbot - {0}";
             this.menuPanel.ResumeLayout(false);
