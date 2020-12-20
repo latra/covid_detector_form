@@ -9,7 +9,7 @@ namespace CovidDetector.Models {
     {
         public NewPatientModel()
         {
-            this.symptoms_binary = "0";
+            this.symptoms_binary = "1";
             this.fever = "2";
             this.tos = "2";
             this.cough_first = "2";
@@ -80,8 +80,8 @@ namespace CovidDetector.Models {
             this.other_symptomatology_artralgies = false;
             this.other_symptomatology_dolor_toracic = false;
             this.cxr2 = "2";
-            this.coviral_binary = "0";
-            this.comorbi_binary = "0";
+            this.coviral_binary = "1";
+            this.comorbi_binary = "1";
             this.cardiopathy = "2";
             this.hypertension = "2";
             this.pulmonar_disease = "2";

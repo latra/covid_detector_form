@@ -63,9 +63,11 @@ namespace CovidDetector.Forms
             }
             AutoMLModule autoML = new AutoMLModule();
             // GIF CARGA
-            int sugested_result = autoML.autoMLAPI.getPredict(new PatientDAO(patient));
+            ResponseModel sugested_result = autoML.autoMLAPI.getPredict(new PatientDAO(patient));
             //END GIF CARGA
-            showResult(sugested_result);
+            string result = string.Format("Covid negative possibility: {0}\nCovid positive possibility: {1}", sugested_result.prob_C.ToString(), sugested_result.prob_A.ToString());
+            MessageBox.Show(result, "Medbot Diagnosis",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void showResult(int sugested_result)

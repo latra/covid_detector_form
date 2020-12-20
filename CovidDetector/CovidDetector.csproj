@@ -102,6 +102,7 @@
       <DependentUpon>PatientsList.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\PatientDAO.cs" />
+    <Compile Include="Models\ResponseModel.cs" />
     <Compile Include="Modules\AutoMLModule.cs" />
     <Compile Include="Modules\LoginModule.cs" />
     <Compile Include="Models\NewPatientModel.cs" />

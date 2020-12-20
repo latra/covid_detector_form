@@ -1,4 +1,5 @@
 ﻿using CovidDetector.Models;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,16 +20,31 @@ namespace CovidDetector.Modules
         public API autoMLAPI { get; set; }
         public class API
         {
-            public int getPredict(PatientDAO patient)
+            public ResponseModel getPredict(PatientDAO patient)
             {
-                POSTRequest(JsonSerializer.Serialize(patient));
-                return 0;
+                string resonse = POSTRequest(JsonSerializer.Serialize(patient));
+                JObject json = JObject.Parse(resonse);
+                ResponseModel response = new ResponseModel();
+                foreach (var element in json["payload"] )
+                {
+                    var info = element["tables"];
+                    var score = float.Parse(info["score"].ToString());
+                    var value = info["value"].ToString();
+                    if (value == "1")
+                    {
+                        response.prob_A = score;
+                    } else if (value == "2")
+                        response.prob_B = score;
+                    else if (value == "3")
+                        response.prob_C = score;
+                }
+                return response;
             }
-            private async void POSTRequest(string postData)
+            private string POSTRequest(string postData)
             {
                 string url = "https://eu-automl.googleapis.com/v1beta1/projects/jofre-ext/locations/eu/models/TBL7988937138211127296:predict";
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                request.Headers.Add("Authorization", "Bearer ");
+                request.Headers.Add("Authorization", "Bearer");
                 request.ContentType = "application/json; charset=utf-8";
                 request.Method = "POST";
                 var data = Encoding.ASCII.GetBytes(postData);
@@ -44,6 +60,7 @@ namespace CovidDetector.Modules
 
                 var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
                 Console.WriteLine(responseString);
+                return responseString;
             }
         }
     }

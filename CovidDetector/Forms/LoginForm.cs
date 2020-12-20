@@ -20,6 +20,8 @@ namespace CovidDetector
         }
         public void setColors()
         {
+            var etimage = new Bitmap(pictureBox2.BackgroundImage, new System.Drawing.Size(pictureBox2.Width, pictureBox2.Height));
+            pictureBox2.BackgroundImage = etimage;
             Color buttonColor = ColorTranslator.FromHtml("#56BEE7");
             Color buttonOverColor = ColorTranslator.FromHtml("#349CC5");
             this.button1.BackColor = buttonColor;
